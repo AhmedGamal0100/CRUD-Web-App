@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--------------------------------  Input  -------------------------------->
+    <table class="table1">
+        <body>
+            <!-- -----------------  01  -------------------- -->
+            <tr>
+                <td>
+                        <label for="pName">Product Name:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <input type="text" class="pName" id="pName" placeholder="Product Name" >
+                        </td>
+            </tr>
+            <!-- -----------------  02  -------------------- -->
+            <tr>
+                <td>
+                        <label for="pPrice">Product Price:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <input type="text" class="pPrice" id="pPrice" placeholder="Product Price" >
+                </td>
+            </tr>
+            <!-- -----------------  03  -------------------- -->
+            <tr>
+                <td>
+                        <label for="pCategory">Product Category:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <input type="text" class="pCategory" id="pCategory" placeholder="Product Category" >
+                </td>
+            </tr>
+            <!-- -----------------  04  -------------------- -->
+            <tr>
+                <td>
+                        <label for="pDesc">Product Descreption:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        <input type="text" class="pDesc" id="pDesc" placeholder="Product Descreption"  class="descBar" >
+                </td>
+            </tr>
+            <!-- -----------------  05  -------------------- -->
+            <tr>
+                <td>
+                        <input type="submit" value="Add Product" class="submitButton"  id="submit" onclick="addProduct()">
+                        <input type="submit" value="Edit" class="submitButton"  id="edit">
+                </td>
+            </tr>
+            <!-- ------------------------------------------- -->
+        </body>
+    </table>
+
+    <!--------------------------------  Search Bar  -------------------------------->
+    <form>
+        <label for="search"></label>
+        <input type="search" id="search" placeholder="search..." class="searchBar" onkeyup="searchBar(this.value)">
+    </form>
+
+    <!--------------------------------  Output  -------------------------------->
+    <table class="table2">
+        <!-- Output Static Header -->
+        <thead>
+            <tr>
+                    <th class="table2UnderLine">Name</th>
+                    <th class="table2UnderLine">Price</th>
+                    <th class="table2UnderLine">Category</th>
+                    <th class="table2UnderLine">Description</th>
+                    <th class="table2UnderLine">Action</th>
+            </tr>
+        </thead>
+
+        <!-- Output Values -->
+        <tbody id="rowPrint" class="rowPrint" id="rowPrint">
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button></button>
+                    <button></button>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
